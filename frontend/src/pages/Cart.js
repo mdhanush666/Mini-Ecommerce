@@ -38,7 +38,7 @@ export default function Cart({ cartItems, setCartItems }) {
   }
 
   function placeOrderHandler(){
-    fetch('https://mini-ecommerce-backend-three.vercel.app/order', {
+    fetch('mini-ecommerce-deploy-2-production.up.railway.app/order', {
       method:"POST",
       headers:{'Content-Type' : 'application/json'},
       body:JSON.stringify(cartItems)

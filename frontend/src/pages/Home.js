@@ -25,7 +25,7 @@ export default function Home() {
 
   //First Load................
   useEffect(() => {
-    fetch(`https://mini-ecommerce-backend-three.vercel.app/?` + searchParams)
+    fetch(`mini-ecommerce-deploy-2-production.up.railway.app/?` + searchParams)
       .then(res => res.json())
       .then(res => setProducts(res.products))
   }, [searchParams])
@@ -35,7 +35,7 @@ export default function Home() {
   const fetchMoreData = () => {
     setTimeout(()=>{
       axios
-      .get(`https://mini-ecommerce-backend-three.vercel.app/?page=${page}`)
+      .get(`mini-ecommerce-deploy-2-production.up.railway.app/?page=${page}`)
       .then((res) => {
         setProducts((prevproducts) => [...prevproducts, ...res.data.products]);
 
