@@ -12,7 +12,7 @@ export default function ProductDetail({cartItems, setCartItems}){
   let {id} = useParams();
 
   useEffect(() =>{
-    fetch('mini-ecommerce-deploy-2-production.up.railway.app/product/'+id)
+    fetch('https://mini-ecommerce-deploy-2-production.up.railway.app/product/'+id)
     .then(res => res.json())
     .then(res => setProduct(res.product))
   },[]);

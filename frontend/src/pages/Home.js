@@ -25,7 +25,7 @@ export default function Home() {
 
   //First Load................
   useEffect(() => {
-    fetch(`mini-ecommerce-deploy-2-production.up.railway.app/?` + searchParams)
+    fetch(`https://mini-ecommerce-deploy-2-production.up.railway.app/?` + searchParams)
       .then(res => res.json())
       .then(res => setProducts(res.products))
   }, [searchParams])
@@ -35,7 +35,7 @@ export default function Home() {
   const fetchMoreData = () => {
     setTimeout(()=>{
       axios
-      .get(`mini-ecommerce-deploy-2-production.up.railway.app/?page=${page}`)
+      .get(`https://mini-ecommerce-deploy-2-production.up.railway.app/?page=${page}`)
       .then((res) => {
         setProducts((prevproducts) => [...prevproducts, ...res.data.products]);
 
