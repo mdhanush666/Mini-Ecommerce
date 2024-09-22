@@ -6,10 +6,6 @@ import { useSearchParams } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import axios from "axios";
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 81216b3765277f0235d42c22f199611b8f39a5db
 export default function Home() {
 
 // when reload navigate to index............
@@ -69,9 +65,5 @@ export default function Home() {
         {products.map((product, index) => <ProductCard product={product} key={index} />)}
       </div>
     </section>
-<<<<<<< HEAD
-
-=======
->>>>>>> 81216b3765277f0235d42c22f199611b8f39a5db
   </InfiniteScroll>
 }
