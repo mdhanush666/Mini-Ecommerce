@@ -29,7 +29,7 @@ export default function Home() {
 
   //First Load................
   useEffect(() => {
-    fetch(`https://mini-ecommerce-backend-six.vercel.app/?` + searchParams)
+    fetch(`https://mini-ecommerce-backend-three.vercel.app/?` + searchParams)
       .then(res => res.json())
       .then(res => setProducts(res.products))
   }, [searchParams])
@@ -39,7 +39,7 @@ export default function Home() {
   const fetchMoreData = () => {
     setTimeout(()=>{
       axios
-      .get(`https://mini-ecommerce-backend-six.vercel.app/?page=${page}`)
+      .get(`https://mini-ecommerce-backend-three.vercel.app/?page=${page}`)
       .then((res) => {
         setProducts((prevproducts) => [...prevproducts, ...res.data.products]);
 

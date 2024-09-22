@@ -12,7 +12,7 @@ export default function ProductDetail({cartItems, setCartItems}){
   let {id} = useParams();
 
   useEffect(() =>{
-    fetch('https://mini-ecommerce-backend-six.vercel.app/product/'+id)
+    fetch('https://mini-ecommerce-backend-three.vercel.app/product/'+id)
     .then(res => res.json())
     .then(res => setProduct(res.product))
   },[]);

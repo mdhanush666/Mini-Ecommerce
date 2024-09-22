@@ -38,7 +38,7 @@ export default function Cart({ cartItems, setCartItems }) {
   }
 
   function placeOrderHandler(){
-    fetch('https://mini-ecommerce-backend-six.vercel.app/order', {
+    fetch('https://mini-ecommerce-backend-three.vercel.app/order', {
       method:"POST",
       headers:{'Content-Type' : 'application/json'},
       body:JSON.stringify(cartItems)
